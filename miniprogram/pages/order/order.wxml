@@ -1,0 +1,25 @@
+<view wx:if="{{!userInfo.nickName}}" class='user-top'>
+  <image src='../../images/bg.png'></image>
+  <view class='user-top-msg'>
+    <image src="{{userInfo.avatarUrl?userInfo.avatarUrl:'https://cdn.xingkwh.com/head.png'}}"></image>
+    <view>
+      <view class='user-name'>{{userInfo.nickName?userInfo.nickName:'未登录'}}</view>
+      <view wx:if="{{!userInfo.nickName}}" class='user-msg'>点击微信登录后可方便购物</view>
+    </view>
+  </view>
+</view>
+<button wx:if="{{!userInfo.nickName}}" class='login' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">微信登录</button>
+<view class='order-one' wx:for="{{orderList}}" wx:key="{{item.id}}">
+  <view class='commodity-one' wx:for="{{item.commodity}}" wx:key="{{item}}">
+    <image src='{{item.image}}'></image>
+    <view class='commodity-one-msg'>
+      <view>{{item.name}}</view>
+      <view>￥{{item.price}}</view>
+    </view>
+    <view class='commodity-one-right'>
+      <view class='commodity-assess'>评价</view>
+      <view>x{{item.count}}</view>
+    </view>
+  </view>
+</view>
+<view class='order-false' wx:if="{{!orderList}}">暂时还没有任何订单</view>

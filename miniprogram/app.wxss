@@ -1,0 +1,56 @@
+page {
+  background: #f9f9f9;
+}
+
+.user-top {
+  height: 320rpx;
+  width: 750rpx;
+  position: relative;
+}
+
+.user-top image {
+  width: 750rpx;
+  height: 254rpx;
+}
+
+.user-top-msg image {
+  height: 100rpx;
+  width: 100rpx;
+  flex-shrink: 0;
+  border-radius: 50%;
+  margin: 0 30rpx;
+}
+
+.user-top-msg {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 90%;
+  height: 60%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.user-name {
+  font-size: 35rpx;
+  font-weight: 600;
+}
+
+.user-msg {
+  font-size: 30rpx;
+  color: #b8b9bc;
+}
+
+.login {
+  height: 80rpx;
+  width: 250rpx;
+  background: #f6e15f;
+  margin: 30rpx 250rpx;
+  border-radius: 10rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: 600;
+}

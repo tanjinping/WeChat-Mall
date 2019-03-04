@@ -1,0 +1,118 @@
+.operating {
+  height: 100rpx;
+  width: 750rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  font-size: 30rpx;
+}
+
+.add-trolley {
+  height: 100%;
+  width: 50%;
+  background: #f7eb9f;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.buy {
+  height: 100%;
+  width: 50%;
+  background: #f6e15f;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.product-image {
+  width: 500rpx;
+  height: 500rpx;
+}
+
+.product-name {
+  margin-left: 50rpx;
+}
+
+.product-title {
+  font-weight: 600;
+}
+
+.product-address {
+  color: #b8b9bc;
+  font-size: 27rpx;
+}
+
+.dollar {
+  height: 50rpx;
+  width: 50rpx;
+  background: #f6e15f;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.product-price {
+  float: right;
+  margin-right: 30rpx;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.product {
+  font-size: 30rpx;
+  background: #fff;
+  width: 730rpx;
+  height: 680rpx;
+  margin: 0 auto 30rpx;
+}
+
+.product-service {
+  background: #fff;
+  height: 300rpx;
+  width: 700rpx;
+  margin: auto;
+}
+
+.service-top {
+  height: 50%;
+  width: 100%;
+  border-bottom: 1px solid #f4f4f4;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.service-top-top image,.service-top-bottom image {
+  height: 16rpx;
+  width: 22rpx;
+}
+
+.service-top-top , .service-top-bottom {
+  display: flex;
+  align-items: center;
+  font-size: 25rpx;
+  height: 50rpx;
+  margin-left: 40rpx;
+}
+
+.service-bottom {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+.service-bottom-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+}
+
+.service-bottom-bottom {
+  font-size: 30rpx;
+  color: #b8b9bc;
+  margin-left: 40rpx;
+}

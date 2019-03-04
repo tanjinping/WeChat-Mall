@@ -1,0 +1,63 @@
+.trolley-top {
+  height: 100rpx;
+  width: 750rpx;
+  background: rebeccapurple;
+  position: fixed;
+  top: 0;
+}
+
+.trolley-bottom , .trolley-top{
+  height: 100rpx;
+  width: 750rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  font-size: 30rpx;
+  align-items: center;
+}
+
+.trolley-top {
+  justify-content: space-around;
+}
+
+.trolley-bottom-price , .trolley-bottom-select , .trolley-bottom-buy {
+  height: 100%;
+  width: 33.33%;
+  display: flex;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.trolley-bottom-buy {
+  background: yellow;
+}
+
+.trolley-bottom-menu , .trolley-top-menu{
+  height: 35rpx;
+  width: 35rpx;
+  border-radius: 50%;
+  border: 1px solid gray;
+  margin-right: 10rpx;
+}
+
+.trolley-bottom-menu image , .trolley-top-menu image{
+  height: 24rpx;
+  width: 33rpx;
+}
+
+.trolley-top-select {
+  display: flex;
+  margin-right: 50%;
+}
+
+.trolley-commodity:nth-child(2) {
+  margin-top: 110rpx;
+}
+
+.trolley-commodity {
+  height: 250rpx;
+  width: 700rpx;
+  background: rebeccapurple;
+  margin:0 auto 30rpx;
+}

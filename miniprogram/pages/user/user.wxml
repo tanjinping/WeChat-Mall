@@ -1,0 +1,21 @@
+<view class='user-top'>
+  <image src='../../images/bg.png'></image>
+  <view class='user-top-msg'>
+    <image src="{{userInfo.avatarUrl?userInfo.avatarUrl:'https://cdn.xingkwh.com/head.png'}}"></image>
+    <view>
+      <view class='user-name'>{{userInfo.nickName?userInfo.nickName:'未登录'}}</view>
+      <view wx:if="{{!userInfo.nickName}}" class='user-msg'>点击微信登录后可方便购物</view>
+    </view>
+  </view>
+</view>
+<button wx:if="{{!userInfo.nickName}}" class='login' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">微信登录</button>
+<view wx:if="{{userInfo.nickName}}" class='user-menu'>
+  <view class='user-address'>
+    <view>收货地址</view>
+    <view>></view>
+  </view>
+  <view class='user-contact'>
+    <view>联系客服</view>
+    <view>></view>
+  </view>
+</view>

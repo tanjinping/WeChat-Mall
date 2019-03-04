@@ -1,0 +1,34 @@
+<view class='home-banner'>
+  <image class='banner-bg' src='../../images/bg.png'></image>
+  <view class='home-discount'>
+    <view class='discount-name'>
+      <image src='../../images/line-red.png'></image>
+      商品1
+      <image src='../../images/line-red.png'></image>
+    </view>
+    <image class='discount-price' src='../../images/discount.png'></image>
+    <view bindtap='commodityClick'  data-commodity='{{productList[0]}}'>
+      <image class='discount-image' src='{{productList[0].image}}'></image>
+    </view>
+  </view>
+</view>
+<view class='recommend-row'>
+  <image src='../../images/line-black.png'></image>
+  春季推荐
+  <image src='../../images/line-black.png'></image>
+</view>
+<view class='commodity-list'>
+  <view bindtap='commodityClick' data-commodity='{{item}}' class='commodity-one' wx:for="{{productList}}" wx:key="{{item.id}}"  wx:if='{{index !== 0}}'>
+    <image class='commodity-image' src='{{item.image}}'></image>
+    <view class='commodity-msg'>
+    <view>{{item.name}}</view>
+    <view class='msg-bottom'>
+      <view class='msg-bottom-left'>
+        <view class='msg-bottom-price'>￥</view>
+        <view>{{item.price}}</view>
+      </view>
+      <view class='msg-bottom-addTrolley'>+</view>
+    </view>
+    </view>
+  </view>
+</view>

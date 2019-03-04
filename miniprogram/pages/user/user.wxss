@@ -1,0 +1,23 @@
+.user-address , .user-contact {
+  display: flex;
+  height: 50%;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 35rpx;
+  color: #68676b;
+}
+
+.user-address {
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.user-menu {
+  width: 675rpx;
+  height: 240rpx;
+  background: #fff;
+  margin: 20rpx auto 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
