@@ -2,14 +2,15 @@
 	"miniprogramRoot": "miniprogram/",
 	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"autoAudits": false
 	},
 	"appid": "wxf42ec789b210cffd",
-	"projectname": "wx_market",
+	"projectname": "market",
 	"libVersion": "2.6.1",
 	"condition": {
 		"search": {
@@ -28,7 +29,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
@@ -48,6 +49,35 @@
 					"id": -1,
 					"name": "购物车",
 					"pathName": "pages/trolley/trolley",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商品详情",
+					"pathName": "pages/product/product",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "评价",
+					"pathName": "pages/evaluate/evaluate",
+					"query": "_Id=XHjW-ZT75u22RFYb",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "评论",
+					"pathName": "pages/comment/comment",
+					"query": "_id=XHZnWeSiwXKAQqjq",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "收货地址",
+					"pathName": "pages/address/address",
+					"query": "",
 					"scene": null
 				}
 			]

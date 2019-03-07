@@ -21,6 +21,10 @@
   border-radius: 5rpx;
 }
 
+.commodity-assess-false {
+  background:gray;
+}
+
 .commodity-one {
   font-size: 30rpx;
   height: 250rpx;

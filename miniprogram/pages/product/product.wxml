@@ -21,14 +21,14 @@
     </view>
   </view>
   <view class='service-bottom'>
-    <view class='service-bottom-top'>
+    <view class='service-bottom-top' bindtap='comment'>
       <view class='service-bottom-top-left'>已买评价</view>
-      <view class='service-bottom-top-right'>1条 ></view>
+      <view class='service-bottom-top-right'>{{comment.length}}条 ></view>
     </view>
-    <view class='service-bottom-bottom'>"test"</view>
+    <view class='service-bottom-bottom'>{{comment.length?comment[0].msg:''}}</view>
   </view>
 </view>
 <view class='operating'>
-  <view class='add-trolley'>加入购物车</view>
+  <view class='add-trolley' bindtap='addTrolley'>加入购物车</view>
   <view class='buy' bindtap='buy'>立即购买</view>
 </view>

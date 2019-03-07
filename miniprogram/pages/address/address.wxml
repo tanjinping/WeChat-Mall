@@ -1,0 +1,24 @@
+<view wx:if="{{!isNew}}" class="add-address" bindtap='add'>点击添加地址</view>
+<view class="newAddress" wx:if="{{isNew}}">
+  <view class='add-row'>
+    <view>收货地址:</view>
+    <view class="{{newAddress.address?' ':'new-msg '}}" bindtap='_addmsg'>{{newAddress.address?newAddress.address:'选择收货地址'}}</view>
+  </view>
+  <view class='add-row'>
+    <view class='number'>电话号码:</view>
+    <input bindinput="bindNumberInput" placeholder="请输入收货人的手机号码" />
+  </view>
+  <view class='add-row'>
+    <view class='name'>姓名:</view>
+    <input bindinput="bindNameInput" placeholder="请输入收货人的姓名" />
+  </view>
+  <view class='add-row add-bottom'>
+    <view class='name' bindtap='determine'>添加</view>
+    <view class='name' bindtap='cancel'>取消</view>
+  </view>
+</view>
+<view class="address" wx:for="{{address}}" wx:key="{{item}}">
+  <view class='address-msg'>{{item.address}}</view>
+  <view class='number'>{{item.number}}</view>
+  <view class='name'>{{item.name}}</view>
+</view>

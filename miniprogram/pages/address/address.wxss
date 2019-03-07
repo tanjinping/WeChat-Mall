@@ -1,0 +1,63 @@
+.add-address {
+  height: 100rpx;
+  width: 750rpx;
+  background: #fff;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 35rpx;
+}
+
+.address {
+  font-size: 35rpx;
+  height: 150rpx;
+  margin-top: 30rpx;
+  width: 750rpx;
+  background: #fff;
+}
+
+.newAddress {
+  font-size: 35rpx;
+  height: 300rpx;
+  margin-top: 30rpx;
+  width: 750rpx;
+  background: #fff;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+.add-row {
+  display: flex;
+}
+
+.new-msg {
+  height: 50rpx;
+  width: 200rpx;
+  margin-left: 30rpx;
+  line-height: 50rpx;
+  text-align: center;
+  color: #fff;
+  background: green;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+}
+
+input {
+  margin-left: 30rpx;
+  border-bottom: 1px solid gray;
+}
+
+.add-bottom {
+  justify-content: space-around;
+}
+
+.add-bottom view {
+  height: 50rpx;
+  width: 100rpx;
+  line-height: 50rpx;
+  text-align: center;
+  color: #fff;
+  background: green;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+}

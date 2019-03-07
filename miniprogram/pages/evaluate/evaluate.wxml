@@ -1,0 +1,11 @@
+<view class="commodity">
+  <image src='{{commodity.image}}'></image>
+  <view class='commodity-msg'>
+    <view class='title'>{{commodity.name}}</view>
+    <view class='price'>￥{{commodity.price}}</view>
+  </view>
+</view>
+<textarea value='{{msg}}' bindinput='input'></textarea>
+<image class="image" src='../../images/image.png' bindtap='select'></image>
+<image wx:for="{{path}}" class='img' src='{{item}}'></image>
+<button bindtap='submit'>提交评价</button>

@@ -1,7 +1,6 @@
 .trolley-top {
   height: 100rpx;
   width: 750rpx;
-  background: rebeccapurple;
   position: fixed;
   top: 0;
 }
@@ -20,6 +19,14 @@
   justify-content: space-around;
 }
 
+.number {
+  height: 50rpx;
+  width: 110rpx;
+  font-size: 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
 .trolley-bottom-price , .trolley-bottom-select , .trolley-bottom-buy {
   height: 100%;
   width: 33.33%;
@@ -33,7 +40,7 @@
   background: yellow;
 }
 
-.trolley-bottom-menu , .trolley-top-menu{
+.trolley-bottom-menu , .trolley-top-menu , .trolley-commodity-select{
   height: 35rpx;
   width: 35rpx;
   border-radius: 50%;
@@ -41,7 +48,7 @@
   margin-right: 10rpx;
 }
 
-.trolley-bottom-menu image , .trolley-top-menu image{
+.trolley-bottom-menu>image , .trolley-top-menu>image , .trolley-commodity-select>image{
   height: 24rpx;
   width: 33rpx;
 }
@@ -56,8 +63,22 @@
 }
 
 .trolley-commodity {
+  font-size: 30rpx;
   height: 250rpx;
   width: 700rpx;
-  background: rebeccapurple;
+  background: #fff;
   margin:0 auto 30rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.commodity-false {
+  width: 430rpx;
+  margin: 150rpx auto 0;
+}
+
+.trolley-commodity>image {
+  height: 200rpx;
+  width: 200rpx;
 }

@@ -1,0 +1,43 @@
+.commodity {
+  height: 200rpx;
+  width: 750rpx;
+  background: white;
+  display: flex;
+  font-size: 30rpx;
+  align-items: center;
+}
+
+.commodity image {
+  height: 200rpx;
+  width: 200rpx;
+  margin: 0 50rpx;
+}
+
+textarea {
+  height: 250rpx;
+  width: 680rpx;
+  background: #fff;
+  margin: 35rpx;
+  font-size: 30rpx;
+}
+
+.img {
+  height: 200rpx;
+  width: 200rpx;
+  margin: 0 0 0 25rpx;
+}
+
+.image {
+  height: 50rpx;
+  width: 50rpx;
+  position: absolute;
+  top: 400rpx;
+  left: 70rpx;
+}
+
+button {
+  height: 70rpx;
+  width: 200rpx;
+  background: yellow;
+  font-size: 30rpx;
+}

@@ -10,10 +10,10 @@
 </view>
 <button wx:if="{{!userInfo.nickName}}" class='login' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">微信登录</button>
 <view wx:if="{{userInfo.nickName}}" class='user-menu'>
-  <view class='user-address'>
+  <navigator url='/pages/address/address' class='user-address'>
     <view>收货地址</view>
     <view>></view>
-  </view>
+  </navigator>
   <view class='user-contact'>
     <view>联系客服</view>
     <view>></view>

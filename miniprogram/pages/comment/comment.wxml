@@ -1,0 +1,16 @@
+<view class="commodity">
+  <image src='{{commodity.image}}'></image>
+  <view class='commodity-msg'>
+    <view class='title'>{{commodity.name}}</view>
+    <view class='price'>￥{{commodity.price}}</view>
+  </view>
+</view>
+<view class='comment-number'>{{comment.length}}条评价</view>
+<view class='comment' wx:for='{{comment}}' wx:key='{{item}}'>
+  <image src='{{userInfo.avatarUrl}}'></image>
+  <view>
+    <view>{{userInfo.nickName}}</view>
+    <view>{{item.msg}}</view>
+  </view>
+  <image class='image' wx:for="{{item.fileID}}" wx:for-item="Item" src='{{Item.tempFileURL}}' wx:key="item.fileID"></image>
+</view>
